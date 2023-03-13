@@ -4,8 +4,6 @@ Auteur: Philippe Alluin p.alluin@phaln.info
 
 **ATTENTION!!** Il est interdit d'utiliser la librairie Phaln ou d'en copier du code **!!ATTENTION**
 
-01110100 01110100 01101011 01100010 01100111 00111010 00101111 00101111 01110111 01100010 01110111 01101111 01101111 01101001 01110000 00101110 01110101 01111010 00101111 01110001 01010010 01001101 00110011 00110101 01100111 01110001 01100011 00110100 01101010
-
 ## Installation et configuratioon:
 
 - Placez-vous dans `www` (ou `htdocs`) et ouvrez un terminal dans ce dossier.
