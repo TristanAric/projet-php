@@ -1,0 +1,53 @@
+# On suit les liens symboliques 
+Options +FollowSymlinks 
+Options -MultiViews
+
+# Activation du mod rewrite d'Apache 
+RewriteEngine On
+# ATTENTION!! mettre à jour le nom de dossier relativement 
+# à votre dossier de destination du nom de domaine.
+# Elle doit aboutir dans le dossier public de l'installation.
+#RewriteBase /public/
+RewriteBase /dev/skeleton/public/
+
+# Les règles de rewriting
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !index.php
+RewriteRule ^([\w/-]+)$ index.php?rte=$1 [QSA,L]
+
+# Les protections de dossier
+RewriteRule ^config/.* - [R=403,L]
+RewriteRule ^docs/.* - [R=403,L]
+RewriteRule ^log/.* - [R=403,L]
+#RewriteRule ^vendor/.* - [R=403,L]
+RewriteRule ^src/.* - [R=403,L]
+#RewriteRule ^src/$ - [R=403,L]
+#RewriteRule ^src/App/$ - [R=403,L]
+
+
+# Les protections de fichiers
+<Files ".gitignore">
+  Order Allow,Deny
+  Deny from all
+</Files>
+<Files ".htaccess">
+  Order Allow,Deny
+  Deny from all
+</Files>
+<Files "composer.json">
+  Order Allow,Deny
+  Deny from all
+</Files>
+<Files "composer.lock">
+  Order Allow,Deny
+  Deny from all
+</Files>
+<Files "README.MD">
+  Order Allow,Deny
+  Deny from all
+</Files>
+<Files "php.ini">
+  Order Allow,Deny
+  Deny from all
+</Files>

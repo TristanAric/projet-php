@@ -1,0 +1,25 @@
+### Les IDE ###
+nbproject
+.idea
+.nb-gradle/
+
+### Les logs ###
+/logs/*.txt
+/logs/*.log
+
+### les config particulière du développeur ###
+/config/appConfig.php
+/config/testConfig.php
+
+### les bibliothèques (elle sont ré-installé avec composer ou npm ###
+node_modules/
+vendor/
+
+## les constructions ###
+build/
+nbbuild/
+dist/
+nbdist/
+database_data/
+cypress/videos/
+.phpdoc

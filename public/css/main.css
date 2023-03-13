@@ -1,0 +1,39 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: black;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+body {
+    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+}
+
+header {
+    border-bottom: 10px solid MediumSeaGreen;
+    background-color: DarkGreen;
+    color: Honeydew;
+}
+
+footer {
+    border-top: 10px solid DarkGreen;
+    background-color: MediumSeaGreen;
+    color: black;
+    padding: 10px 0;
+}
+
+main {
+    padding: 30px 0;
+    background-color: Honeydew;
+}
+
+main article h1 {
+    font-size: 2em;
+}
+
+main header {
+    border-bottom: 2px solid darkblue;
+    background-color: Honeydew;
+    color: black;
+}
